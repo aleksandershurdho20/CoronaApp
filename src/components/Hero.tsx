@@ -47,15 +47,15 @@ const Hero = () => (
     <StyledLogo className="app-logo" />
     <HeroTitle>Covid-19 Coronavirus Outbreak</HeroTitle>
     <HeroSubTitle>
-      Data sources from{' '}
+      Made With love By{' '}
       <a
-        href="https://github.com/mathdroid/covid-19-api"
+        href="https://www.facebook.com/Softal-108378417254851"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Muhammad Mustadi's
+        SOFTAL
       </a>{' '}
-      API
+      
     </HeroSubTitle>
   </HeroContainer>
 );

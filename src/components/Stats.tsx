@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from 'styled-components';
-
 import useDataApi from '../hooks/useDataApi';
 import { formatNumber, formatDate } from '../utils';
 import Card from './Card';
@@ -8,17 +7,18 @@ import Error from './Error';
 import { mediaQuery } from '../themes';
 import { IStatsResponse } from '../types';
 import Row from './Row';
+import  '../components/index.css';
 
 const StatSection = styled.section`
   display: block;
 `;
-
 const StatHeading = styled.div`
   display: flex;
   padding: 0 10px;
   flex-direction: column;
   margin-bottom: 1rem;
 `;
+
 
 const StatTitle = styled.h2`
   color: inherit;
@@ -66,17 +66,17 @@ const Stats: React.FC<StatProps> = ({ url, title }) => {
                   <h2>
                     {data.confirmed && formatNumber(data.confirmed.value)}
                   </h2>
-                  <h4>Confirmed</h4>
+                  <h4 className="Current-Component">Confirmed</h4>
                 </Card>
                 <Card info="danger" loading={isLoading}>
                   <h2>{data.deaths && formatNumber(data.deaths.value)}</h2>
-                  <h4>Deaths</h4>
+                  <h4 className="Dead-Component">Deaths</h4>
                 </Card>
                 <Card info="success" loading={isLoading}>
                   <h2>
                     {data.recovered && formatNumber(data.recovered.value)}
                   </h2>
-                  <h4>Recovered</h4>
+                  <h4 className="Recovered-Component">Recovered</h4>
                 </Card>
               </>
             )}

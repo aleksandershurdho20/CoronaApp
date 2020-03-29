@@ -12,6 +12,7 @@ const App = () => {
         <Hero />
         <Stats title="Global Case" url={API_ENDPOINT} />
         <CountryPicker />
+       
       </main>
     </>
   );

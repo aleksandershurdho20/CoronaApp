@@ -1,0 +1,31 @@
+.Recovered-Component{
+    background:#05b584;
+    padding:5px;
+    border-radius:25px;
+    box-shadow: 5px 10px #888888;
+    opacity: 0.6;
+}
+.Dead-Component{
+    background: #FF0000;
+    padding: 5px;
+    border-radius: 25px;
+    opacity: 0.6;
+    box-shadow: 5px 10px #888888;
+
+}
+.Current-Component{
+    padding: 5px;
+    border-radius: 25px;
+    opacity: 0.6;
+    box-shadow: 5px 10px #888888;
+    background: #f77427;
+}
+input{
+    background: #FFF;
+    border-radius: 7px;
+    border: 1px solid #e8e8e8 !important;
+}
+input:focus{
+    font-weight: 700;
+    
+}
