@@ -46,3 +46,4 @@ const Card: React.FC<CardProps> = ({ loading = false, info, children }) => (
 );
 
 export default Card;
+//Softal
